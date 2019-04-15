@@ -1,0 +1,258 @@
+.jumbotron{
+    background-color: #f2f7ff;
+}
+
+.addNewExpense{
+    text-align: center;
+
+    button{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.modal-container {
+    position: relative;
+  }
+  .modal-container .modal, .modal-container .modal-backdrop {
+    position: absolute;
+  }
+
+.modal-dialog{
+    margin-top: 200px;
+}
+
+.modal-body{
+    .noComments{
+        text-align: center;
+    }
+}
+
+.addExpenseButton{
+    float: left !important;
+    margin-top: 10px;
+    width: 100%;
+}
+
+//* Comments
+
+.comment-node{
+    position: relative;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 2.1em;
+    padding-bottom: 2px;
+
+  
+    .print-author{
+      position: absolute;
+      top: 0.5em;
+      color: #002866;
+      font-size: 10px;
+      
+    }
+
+    p{
+      padding-top: 20px;
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+
+    .comment-date{
+      font-style: italic;
+      padding-top:0px;
+      margin-bottom: 0px;
+
+    }
+
+
+    
+  }
+
+  .reply {
+    margin-left: 100px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+    }
+
+
+  .pointer{
+    border:solid 20px transparent;
+    border-right-color:#fff;
+    position:absolute;
+    margin:20px 0 0 -35px;
+    z-index:999;
+}
+
+
+.pointer-reply{
+    border:solid 20px transparent;
+    border-right-color:#fff;
+    position:absolute;
+    margin: 10px 0 0 70px;
+    z-index:999;
+   }
+
+   .reply-btn{
+    padding-left: 0px;
+    padding-top: 3px;
+   }
+.commentsBtn{
+    background: transparent;
+    border: none;
+}
+
+// *** Autosuggest Users
+
+.react-autosuggest__container {
+    position: relative;
+  }
+  
+  .react-autosuggest__input {
+    width: 240px;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+  
+  .react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    // top: 51px;
+    width: 240px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+  }
+  
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+
+  .suggestionEmail{
+      font-size: 10px;
+      border-bottom: #aaa 2px solid;
+  }
+
+  .employeesBadge{
+      font-size: 12px;
+      margin: 5px 5px;
+  }
+
+  .addUserBtn{
+      margin-left: 10px;
+  }
+
+  .deleteUserBadge{
+    cursor: pointer;
+  }
+
+  .addNewCapability{
+    float: right;
+  }
+
+  .chooseCapabilityBtn{
+    margin-left: 5px;
+  }
+
+  // Loading animation
+
+  .line {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #0064fe;
+}
+
+.load-1{
+  margin: auto;
+}
+
+.load-1 .line:nth-last-child(1) {animation: loadingA 1.5s 1s infinite;}
+.load-1 .line:nth-last-child(2) {animation: loadingA 1.5s .5s infinite;}
+.load-1 .line:nth-last-child(3) {animation: loadingA 1.5s 0s infinite;}
+
+@keyframes loadingA {
+    0% {height: 20px;}
+    50% {height: 40px;}
+    100% {height: 20px;}
+}
+
+// ***********************
+
+.newCommentsSVG{
+    width: 30px;
+    margin-left: 3px;
+    fill: red;
+}
+
+.textareaResponseManager{
+  margin-top: 10px;
+}
+
+.postResponseManager{
+  margin-top: 10px;
+}
+
+.grantPermission{
+  margin-bottom: 3px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+
+#emptyManagerResponse{
+  color: #dc3545;
+  padding-top: 2px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.is-invalid{
+  margin-top: 5px;
+}
+
+#formControlsTextarea{
+  margin-top: 5px;
+}
+
+.expenseDescription{
+  width: 580px;
+}
