@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import Autosuggest from 'react-autosuggest';
 import { connect } from 'react-redux';
 import { getAllUsers, addUserToCapability } from './../../../../actions/allUsers';
-
-import axios from 'axios';
-
 import Button from 'react-bootstrap/lib/Button';
 import Form from 'react-bootstrap/lib/Form';
 

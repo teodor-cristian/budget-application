@@ -1,17 +1,10 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 import { setCurrentCategory, getCurrentCategory } from '../../actions/currentCategory';
-
-import {Nav, Navbar, NavItem, MenuItem, NavDropdown} from 'react-bootstrap'
-// Include all foundation (base) styles once in your main entry point:
-// import "metro-ui-components/lib/css/metro-ui.foundation.css";
-
-// Then import react components
-import { VerticalHeader, VerticalHeaderButton, VerticalHeaderDrawer, Panel, Bar, BarItem, StoreID, 
-    ChoiceList, ChoiceListLink, Icon, PanelHeader, Input, IconButton,
-    Address } from "metro-ui-components";
+import { VerticalHeader, VerticalHeaderButton, VerticalHeaderDrawer, Panel, Bar, BarItem, 
+         ChoiceList, ChoiceListLink, Icon, PanelHeader, IconButton,
+         Address } from "metro-ui-components";
 
 
 class LeftNavigation extends Component{
@@ -19,7 +12,7 @@ class LeftNavigation extends Component{
     constructor(props){
         super(props);
         this.state = {
-          selectedCapability:true,
+          selectedCapability:true, 
           openDrawer: true
         }
 

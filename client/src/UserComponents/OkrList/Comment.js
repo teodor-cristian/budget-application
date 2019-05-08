@@ -4,10 +4,6 @@ import {Glyphicon} from 'react-bootstrap';
 
 
 class Comment extends Component{
-    constructor(props, context) {
-        super(props, context);
-    
-      }
 
       parseISOString(s) {
         var b = s.split(/\D+/);

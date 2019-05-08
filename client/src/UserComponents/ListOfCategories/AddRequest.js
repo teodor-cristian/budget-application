@@ -1,15 +1,10 @@
 import React,{Component} from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { postNewRequest } from '../../actions/currentCategory';
 import { logoutUser } from '../../actions/authentication';
-
-
 import {FormGroup, Button, FormControl, InputGroup, HelpBlock } from 'react-bootstrap';
-
-import { Input, Chip, SummaryIcon,SummaryContent, Address, Description, SummaryErrorMessage, SummaryButton, SummaryButtons } from "metro-ui-components";
+import {Chip} from "metro-ui-components";
 
 
 class AddRequest extends Component{

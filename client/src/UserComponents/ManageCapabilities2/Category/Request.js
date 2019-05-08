@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import {setCurrentRequest, postMarkCommentsAsRead, postMarkRequestAsRead} from '../../../actions/currentCapabilityManager';
 import CommentsModal from './CommentsModal';
 import {Media, MediaList, MediaVisual, MediaContent, MediaAside,
-        Icon, ProfilePicture, Description,
-        ModalContainer, Modal, ModalContent, Button, Badge} from 'metro-ui-components';
+        Icon, ProfilePicture, Description, Badge} from 'metro-ui-components';
 
 class Request extends Component{
 

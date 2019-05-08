@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
-import { connect } from 'react-redux';
-
 import {Row, Col, Glyphicon} from 'react-bootstrap';
+
 
 class RequestManagerResponse extends Component{
 

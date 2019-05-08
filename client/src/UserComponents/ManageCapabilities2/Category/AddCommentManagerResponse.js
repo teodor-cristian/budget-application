@@ -5,8 +5,8 @@ import classnames from 'classnames';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 
-import {Modal, Button, Form, FormGroup, Grid, Row, Col, FormControl, Checkbox} from 'react-bootstrap';
-import {ScrollPositionProvider, ScrollableContainer, Separator, ToggleButton} from 'metro-ui-components';
+import {Button, Form, FormGroup, Grid, Row, Col, FormControl} from 'react-bootstrap';
+import {ToggleButton} from 'metro-ui-components';
 
 class AddManagerResponse extends Component{
 

@@ -6,14 +6,12 @@ import { loginUser } from '../actions/authentication';
 import classnames from 'classnames';
 // import Home from 'create-react-app/my-app/client/src/components/Home';
 
-
 // ***
 // Importing individual components from react-bootstrap
 // ***
 var Form = require('react-bootstrap/lib/Form');
 var FormGroup = require('react-bootstrap/lib/FormGroup');
 var Col = require('react-bootstrap/lib/Col');
-var ControlLabel = require('react-bootstrap/lib/ControlLabel');
 var Button = require('react-bootstrap/lib/Button');
 var FormControl = require('react-bootstrap/lib/FormControl');
 // ***

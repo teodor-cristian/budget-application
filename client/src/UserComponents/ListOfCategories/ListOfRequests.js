@@ -1,17 +1,12 @@
 import React,{Component} from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCurrentCategory } from '../../actions/currentCategory';
-
-import AddRequest from './AddRequest';
 import Request from './Request'
 import LoadingAnimation from '../ReusableComponents/LoadingAnimation'
-
 import { StyleRoot } from 'radium'
-
 import Timeline from 'react-dual-timeline'
+
 
 class ListOfRequests extends Component{
 
@@ -24,8 +19,6 @@ class ListOfRequests extends Component{
 
 
     render(){
-
-        const {current_category, is_set} = this.props;
         return(
            <span>
                {this.props.posting_new_request?

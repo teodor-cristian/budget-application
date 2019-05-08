@@ -2,10 +2,8 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import {postNewExpense} from '../../actions/currentCategory';
 import {getAllCategories} from '../../actions/capabilities'
-
-import {Well, FormGroup, ControlLabel, FormControl, Button, Glyphicon, Alert, Badge, Form} from 'react-bootstrap';
+import {Well, FormGroup, ControlLabel, FormControl, Button, Alert} from 'react-bootstrap';
 import classnames from 'classnames';
-import { promises } from 'fs';
 
 
 class AddExpense extends Component{

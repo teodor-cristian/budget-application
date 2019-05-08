@@ -5,14 +5,14 @@ import CommentNode from './CommentNode';
 import AddManagerResponse from './AddCommentManagerResponse';
 import CustomScroll from 'react-custom-scroll';
 import './../../../../node_modules/react-custom-scroll/dist/customScroll.css';
-import {Modal, Button, Form, FormGroup, Grid, Row, Col, FormControl, Checkbox} from 'react-bootstrap';
-import {ScrollPositionProvider, ScrollableContainer, Separator, ToggleButton} from 'metro-ui-components';
+import {Modal, Button} from 'react-bootstrap';
+import {Separator} from 'metro-ui-components';
 class CommentsModal extends Component{
 
     
     constructor() {
         super();
-        this.state = {
+        this.state = { 
             managerResponse: "",
             grantPermissionToAddExpense: false
         };

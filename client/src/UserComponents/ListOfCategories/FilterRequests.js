@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import {filterRequests} from './../../actions/currentCategory';
 
-import {Form} from 'react-bootstrap';
 
 class FilterRequests extends Component{
 

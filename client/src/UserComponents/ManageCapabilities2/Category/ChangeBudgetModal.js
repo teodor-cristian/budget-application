@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import { postChangeBudget } from './../../../actions/currentCapabilityManager';
 
-import {Modal, Button, Form} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
 
 class ChangeBudgetModal extends Component{
 

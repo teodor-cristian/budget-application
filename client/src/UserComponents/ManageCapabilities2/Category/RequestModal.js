@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import {postRequestManagerResponse} from '../../../actions/currentCapabilityManager';
 import AddRequestManagerResponse from './AddRequestManagerResponse';
 import RequestManagerResponse from './RequestManagerResponse';
-import {Grid, Row, Col, FormGroup, FormControl } from 'react-bootstrap';
-import {ToggleButton, Button} from 'metro-ui-components';
-import DayPickerInput from 'react-day-picker/DayPickerInput';
+import {Grid, Row, Col} from 'react-bootstrap';
 import 'react-day-picker/lib/style.css';
 
 

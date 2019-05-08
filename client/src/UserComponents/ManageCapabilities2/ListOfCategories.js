@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import {setCurrentCategory} from '../../actions/currentCapabilityManager'
-
-import {NestedViewPage, StoryWithToggles } from 'metro-ui-components';
 import {TabGroup} from 'metro-ui-components';
 
 class ListOfCategories extends Component{

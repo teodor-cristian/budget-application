@@ -6,7 +6,7 @@ import { saveAs } from 'file-saver';
 import DayPicker from 'react-day-picker/DayPicker';
 import { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-import {Modal, Button, Form} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
 
 class DownloadExpensesModal extends Component{
 

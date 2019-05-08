@@ -22,7 +22,7 @@ import 'bootstrap'
 // bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
 // import {Button as ButtonM} from 'metro-ui-components/lib/react/Button';
-import {Grid, Row, Col, Table, Modal, ControlLabel} from 'react-bootstrap';
+import {Grid, Row, Col, Table, ControlLabel} from 'react-bootstrap';
 
 var Thumbnail = require('react-bootstrap/lib/Thumbnail')
 var Button = require('react-bootstrap/lib/Button');
