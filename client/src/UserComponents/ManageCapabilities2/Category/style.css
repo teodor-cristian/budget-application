@@ -1,0 +1,184 @@
+.requestHeader {
+  margin-top: 15px; }
+
+.hashtags {
+  color: #0064fe; }
+
+.commentsButton {
+  background-color: transparent;
+  border-color: transparent; }
+
+.modalContainer {
+  max-height: 600px;
+  background-color: #f2f7ff;
+  display: flex; }
+
+.modal-lg {
+  max-width: 1200px; }
+
+.commentSection {
+  max-height: 310px;
+  /* box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75); */
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px dashed #787878; }
+
+.comment-node {
+  position: relative;
+  margin-bottom: 1em;
+  padding: 1.5em;
+  background: #fff;
+  border-radius: 2.1em;
+  padding-bottom: 2px;
+  text-align: justify !important; }
+  .comment-node .print-author {
+    position: absolute;
+    top: 0.5em;
+    color: #002866;
+    font-size: 10px; }
+  .comment-node p {
+    padding-top: 20px;
+    font-size: 11px;
+    margin-bottom: 5px; }
+  .comment-node .comment-date {
+    font-style: italic;
+    padding-top: 0px;
+    margin-bottom: 0px; }
+
+.commentDiv {
+  position: sticky;
+  margin-left: 20px; }
+
+.addCommentSection {
+  margin-top: 20px; }
+
+.reply {
+  margin-left: 100px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 2px;
+  margin-bottom: 10px; }
+
+.pointer {
+  border: solid 20px transparent;
+  border-right-color: #fff;
+  position: absolute;
+  margin: 20px 0 0 -35px;
+  z-index: 999; }
+
+.pointer-reply {
+  border: solid 20px transparent;
+  border-right-color: #fff;
+  position: absolute;
+  margin: 10px 0 0 70px;
+  z-index: 999; }
+
+.reply-btn {
+  padding-left: 0px;
+  padding-top: 3px; }
+
+.commentsBtn {
+  background: transparent;
+  border: none; }
+
+.m-toggleButton-label {
+  float: right;
+  margin-right: 8em; }
+
+#emptyManagerResponse {
+  color: #dc3545;
+  padding-top: 5px; }
+
+.m-badge-isLarge {
+  margin-left: -15px; }
+
+.allRequest {
+  display: flex;
+  max-height: 500px; }
+
+.requestContainerModal {
+  margin-top: 30px; }
+
+.formGroupModalRequest {
+  width: 100%; }
+
+.requestResponse {
+  border: 2px dashed #ccc;
+  padding: 15px;
+  padding-bottom: 5px;
+  margin: 15px;
+  border-radius: 15px;
+  margin-left: 120px; }
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 15px solid #ccc; }
+
+.tip-down {
+  bottom: -28px;
+  right: 50px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent; }
+
+.relativeContainer {
+  position: relative; }
+
+.postManagerRequestResponse {
+  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px; }
+
+.requestResponseDisplay {
+  background-color: white;
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+  color: #002866; }
+
+.requestDate {
+  font-style: italic;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  font-size: 11px; }
+
+.glyphiconRequest {
+  font-size: 20px; }
+
+#datePickerLabel {
+  padding-top: 2px; }
+
+.datePickerColumn {
+  margin-bottom: 200px; }
+
+.delayDate {
+  font-size: 11px;
+  font-weight: normal;
+  font-style: italic;
+  margin-left: -5px; }
+
+.newRequest {
+  background-color: #ffed004f; }
+
+.modalBudgetContainer {
+  text-align: center; }
+
+.changeBudget {
+  float: right; }
+
+.saveChangeBudget {
+  width: 100%;
+  margin-top: 10px; }
+
+.modal-dialog {
+  margin-top: 200px; }
+
+.expensesContainer {
+  padding-bottom: 30px; }
+
+.downloadBtnExpenses {
+  float: right;
+  margin-top: 15px; }

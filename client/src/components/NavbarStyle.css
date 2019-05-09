@@ -1,0 +1,26 @@
+nav {
+  color: #002d72;
+  font-family: Lato, sans-serif; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #002d72 !important;
+  font-size: 15px; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #0050cb !important; }
+
+.activeLink {
+  border-bottom: 3px solid #0064fe; }
+
+#profileSVG {
+  width: 40px;
+  fill: #0064fe; }
+
+.profileSVGLink {
+  padding-right: 0px; }
+
+#metroSVG {
+  width: 40px;
+  fill: #0064fe; }
+
+.budgetHeader {
+  color: #0064fe; }
