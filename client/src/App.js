@@ -14,9 +14,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 // import {ManageCapabilities as ManageCapabilitiesAdmin} from './UserComponents/ManageCapabilities/index'
 import PrivateRoute from './private_routes/PrivateRoute';
-import OKR_Management from 'create-react-app/my-app/client/src/ManagementComponents/OKR_Management';
+import OKR_Management from './ManagementComponents/OKR_Management';
 import OKR_List from './UserComponents/OkrList';
-import ManageCapabilities from 'create-react-app/my-app/client/src/UserComponents/ManageCapabilities2';
+import ManageCapabilities from './UserComponents/ManageCapabilities2';
 import ListOfCategories from './UserComponents/ListOfCategories';
 
 

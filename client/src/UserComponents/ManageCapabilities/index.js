@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'C:/Users/t-c.solca/AppData/Roaming/npm/node_modules/create-react-app/my-app/client/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import "./style.css"
 import Capability from './Capability';

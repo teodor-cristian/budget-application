@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { connect } from 'react-redux';
-import {postManagerResponse} from 'create-react-app/my-app/client/src/actions/currentCapabilityManager';
+import {postManagerResponse} from './../../../actions/currentCapabilityManager';
 import classnames from 'classnames';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';

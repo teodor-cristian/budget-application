@@ -6,7 +6,7 @@ import { SET_CURRENT_CATEGORY, GET_CURRENT_CATEGORY, ADD_NEW_REQUEST,
 import axios from 'axios';
 import {removePermissionFromUser} from './authentication';
 import {postSecondExpense} from './capabilities'
-import store from 'create-react-app/my-app/client/src/store';
+import store from '../../src/store';
 
 export const getCurrentCategory = () =>  dispatch => {
 

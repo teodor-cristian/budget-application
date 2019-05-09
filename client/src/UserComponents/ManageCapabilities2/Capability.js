@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { setCurrentCapability } from '../../actions/currentCapabilityManager';
 
 import ListOfCategories from './ListOfCategories';
-import Category from 'create-react-app/my-app/client/src/UserComponents/ManageCapabilities2/Category/Category';
+import Category from './Category/Category';
 import CapabilityUsers from  './Category/CapabilityUsers/index';
 import {Jumbotron} from 'react-bootstrap';
 import {Separator} from 'metro-ui-components';

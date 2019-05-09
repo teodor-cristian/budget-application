@@ -9,7 +9,7 @@ import Category from './Category';
 import NoCapabilities from './NoCapabilities';
 
 import {Grid, Row, Col} from 'react-bootstrap';
-import LeftNavigation from 'create-react-app/my-app/client/src/UserComponents/ListOfCategories/LeftNavigation';
+import LeftNavigation from './LeftNavigation';
 
 class ListOfCategories extends Component{
 

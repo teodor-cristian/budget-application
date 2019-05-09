@@ -2,8 +2,8 @@ import { combineReducers } from 'redux';
 import errorReducer from './errorReducer';
 import authReducer from './authReducer';
 import capabilitiesReducer from './capabilitiesReducer';
-import currentCategoryReducer from 'create-react-app/my-app/client/src/reducers/currentCategoryReducer';
-import currentCapabilityManagerReducer from 'create-react-app/my-app/client/src/reducers/currentCapabilityManagerReducer';
+import currentCategoryReducer from './currentCategoryReducer';
+import currentCapabilityManagerReducer from './currentCapabilityManagerReducer';
 import allUsersReducer from './allUsersReducer';
 import allManagersReducer from './allManagersReducer';
 
