@@ -8,7 +8,9 @@ import { connect } from 'react-redux';
 import CustomScroll from 'react-custom-scroll';
 import './../../../../node_modules/react-custom-scroll/dist/customScroll.css';
 
-import { Button } from 'react-bootstrap';
+import {getAllUnreadComments} from './../../../actions/currentCapabilityManager';
+
+import { Button, Badge, Row, Col } from 'react-bootstrap';
 import { Separator } from 'metro-ui-components';
 
 class Category extends Component{
@@ -16,12 +18,14 @@ class Category extends Component{
     constructor() {
         super();
         this.state = {
-            openModalBudget:false
+            openModalBudget:false,
+            updated: false
         };
 
         this.openModal = this.openModal.bind(this);
         this.handleModalClose = this.handleModalClose.bind(this);
       }
+
 
     openModal(){
         this.setState({openModalBudget: true})
@@ -33,8 +37,8 @@ class Category extends Component{
     }
 
     render(){
-        
-
+        let {unreadRequests, unreadComments}=getAllUnreadComments(this.props.current_capability.categories[this.props.current_category_index].requests)
+        console.log(unreadRequests, unreadComments);
         return (<span>
             {this.props.is_set_current_category?
             (<span>
@@ -45,14 +49,28 @@ class Category extends Component{
             <Separator> - </Separator>
             <h3>List of expenses:</h3>
             <ExpensesTable />
+
             <Separator> - </Separator>
+
+            <Row className="requestsWrapper">
+            <Col xs={6}>
             <h2 className="requestHeader">
-            {/* {this.props.current_capability.categories[this.props.current_category_index].name} */}
             Requests
             </h2>
+            </Col>
+            <Col xs={6} className="noReqNoCommWrapper">
+                <Badge className="badgeReqCommWrapper">
+                <p>{unreadRequests} new requests</p>
+                </Badge>
+                <Badge className="badgeReqCommWrapper">
+                <p>{unreadComments} new comments</p>
+                </Badge>
+            </Col>
+            </Row>
+
             <div className="allRequest">
             <CustomScroll flex="1" keepAtBottom={false}>
-            {this.props.current_capability.categories[this.props.current_category_index].requests.reverse().map(function(request,index){ //.reverse()
+            {this.props.current_capability.categories[this.props.current_category_index].requests.map(function(request,index){ // .reverse()
                 return(
                     <Request key={index} request={request} request_index={index} />
                 )
@@ -81,4 +99,4 @@ const mapStateToProps = (state) => ({
 
 })
 
-export default connect(mapStateToProps)(Category);
+export default connect(mapStateToProps, {getAllUnreadComments})(Category);

@@ -1,5 +1,19 @@
+.requestsWrapper {
+  margin-bottom: 25px; }
+
 .requestHeader {
   margin-top: 15px; }
+
+.noReqNoCommWrapper {
+  text-align: right;
+  margin-top: 15px; }
+
+.badgeReqCommWrapper {
+  margin-right: 10px;
+  background: #007bff; }
+  .badgeReqCommWrapper p {
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
 
 .hashtags {
   color: #0064fe; }

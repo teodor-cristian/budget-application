@@ -45,11 +45,8 @@ class Navbar extends Component {
                 )
                 :
                 null}
-                <NavLink to="/okr_list_protected" className="nav-link" activeClassName="activeLink" pathname={this.state.location}>
-                List of categories
-                </NavLink>
                 <NavLink to="/list_of_categories" className="nav-link" activeClassName="activeLink" pathname={this.state.location}>
-                List of categories 2
+                List of categories
                 </NavLink>
                 <NavLink to="/" className="nav-link" onClick={this.onLogout.bind(this)} >
                 Logout
@@ -59,7 +56,7 @@ class Navbar extends Component {
       const guestLinks = (
         <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-                <Link className="nav-link" to="/login">Sign In</Link>
+                <Link className="nav-link" to="/idam-login">Sign In</Link>
             </li>
         </ul>
       )

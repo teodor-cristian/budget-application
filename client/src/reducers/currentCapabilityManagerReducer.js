@@ -103,7 +103,7 @@ export default function(state = initialState, action ) {
                 }
             return {
                 ...state,
-                //*** */ current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
+            //  current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
             }
         case POST_MARK_COMMENT_READ_REJECTED:
             return {

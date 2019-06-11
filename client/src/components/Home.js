@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { loginUserWithIdam } from '../actions/authentication';
 import jwt_decode from 'jwt-decode';
 
-import LoadingAnimation from './../UserComponents/ReusableComponents/LoadingAnimation';
+import './HomeStyle.css';
 
 
 class Home extends Component {
@@ -11,10 +11,12 @@ class Home extends Component {
    render(){
       const url =window.location.href;
       const token = url.split("#access_token=");
-      var decoded = jwt_decode(token[1]);
-      console.log(decoded);
+      console.log(token[1]);
   
-      if(decoded){
+      console.log("token 1: ",token[1])
+      if(token[1]){
+         var decoded = jwt_decode(token[1]);
+
          this.props.loginUserWithIdam(decoded.email);
           
          setTimeout(function () {
@@ -25,8 +27,6 @@ class Home extends Component {
   
      return (
      <div>
-        <LoadingAnimation />
-        {/* <h1>{decoded.email}</h1> */}
       </div>
      )
    }

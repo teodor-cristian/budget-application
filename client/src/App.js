@@ -15,7 +15,6 @@ import Home from './components/Home';
 // import {ManageCapabilities as ManageCapabilitiesAdmin} from './UserComponents/ManageCapabilities/index'
 import PrivateRoute from './private_routes/PrivateRoute';
 import OKR_Management from './ManagementComponents/OKR_Management';
-import OKR_List from './UserComponents/OkrList';
 import ManageCapabilities from './UserComponents/ManageCapabilities2';
 import ListOfCategories from './UserComponents/ListOfCategories';
 
@@ -53,7 +52,6 @@ class App extends Component {
                 <Route exact path="/login" component={ Login } />
                 <Route path='/idam-login' component={() => { window.location = 'https://idam-pp.metrosystems.net/web/Signin?state=&scope=openid&locale_id=de-DE&redirect_uri=http://localhost:3000&client_id=Client1&country_code=DE&realm_id=metro&account_id=&user_type=EMP&response_type=token'; return null;} }/>
                 <PrivateRoute exact path="/okr_management_protected" isAuth={userAuthentificated} route='/okr_management' component={ OKR_Management } />
-                <PrivateRoute exact path="/okr_list_protected" isAuth={userAuthentificated} route='/okr_list' component={ OKR_List } />
                 <PrivateRoute exact path="/manageCapabilities" isAuth={userAuthentificated} route='/manageCapabilities' component={ ManageCapabilities } />
                 <PrivateRoute exact path="/list_of_categories" isAuth={userAuthentificated} route='/list_of_categories' component={ ListOfCategories } />
             </div>

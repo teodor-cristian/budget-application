@@ -147,5 +147,21 @@ export const postChangeBudget = ( _id_capabilitate, _id_categorie, new_budget) =
                 dispatch({ type: POST_CHANGE_BUDGET_REJECTED,
                            payload: err});
             });
-           
+}
+
+export const getAllUnreadComments = (requests) => {
+    let unreadRequests = 0;
+    let unreadComments = 0;
+
+    requests.forEach(request => {
+        if(!request.requestRead){
+            unreadRequests++;
+        }
+        for(let i=0;i<request.comments.length;i++){
+            if(!request.comments[i].messageRead)
+            unreadComments++;
+        }    
+    });
+    
+    return {unreadRequests: unreadRequests, unreadComments: unreadComments};
 }
