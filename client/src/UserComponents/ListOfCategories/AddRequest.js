@@ -77,7 +77,7 @@ class AddRequest extends Component{
     render(){
         return(
             
-            <form className="addRequestForm">
+            <form className="addRequestForm" onKeyPress={(e) => {(e.key === 'Enter' ? e.preventDefault() : null)}}>
                 
                 <FormGroup controlId="formControlsTextarea" validationState={this.state.textareaError.validationState}>
                 <FormControl componentClass="textarea"

@@ -46,7 +46,7 @@ export default function(state = initialState, action ) {
             }
         case POST_NEW_REQUEST_FULFILLED:
             var requestList=state.current_category.requests;
-            requestList.push(action.payload);
+            requestList.unshift(action.payload);
             return {
                 ...state,
                 posting_new_category: false,

@@ -70,7 +70,7 @@ class Category extends Component{
 
             <div className="allRequest">
             <CustomScroll flex="1" keepAtBottom={false}>
-            {this.props.current_capability.categories[this.props.current_category_index].requests.map(function(request,index){ // .reverse()
+            {this.props.current_capability.categories[this.props.current_category_index].requests.map(function(request,index){ //MDF-PERF. .reverse()
                 return(
                     <Request key={index} request={request} request_index={index} />
                 )

@@ -30,7 +30,7 @@ class ListOfRequests extends Component{
             <Timeline 
              activeColor='#4eb7f5' lineColor="#005cbf" itemWidth={600} animations={false} twoSidedOverlap={200}>
             {
-                this.props.current_category.requests.reverse().map(function(request,index){ //reverse()
+                this.props.current_category.requests.map(function(request,index){ // MDF-PERF.reverse()
                     return(<span key={request._id}>
                         <Request
                         style={{'text-align': 'left'}}

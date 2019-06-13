@@ -181,12 +181,14 @@ router.post('/post_new_request', passport.authenticate('jwt', { session: false})
             {"_id": req.body._id_capabilitate
             },
               {
-                "$addToSet": {"categories.$[outer].requests": {"_id": _id_request,
+                "$push": {"categories.$[outer].requests": {"$each":[{"_id": _id_request,
                                                                "body": req.body.new_request.body,
                                                                "hashtags": req.body.new_request.hashtags,
                                                                "authorName": req.body.new_request.authorName,
                                                                "comments": [],
-                                                               "managerResponse": null}},
+                                                               "managerResponse": null}],
+                                                            "$position": 0 }  
+                                                              },
               },
               {
                 "arrayFilters": [{ "outer._id":  mongoose.Types.ObjectId(req.body._id_categorie) }] ,

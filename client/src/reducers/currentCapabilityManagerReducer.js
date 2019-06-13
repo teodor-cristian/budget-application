@@ -54,7 +54,7 @@ export default function(state = initialState, action ) {
         case POST_REQUEST_MANAGER_RESPONSE_FULFILLED:
             var categoryUpdated=state.current_capability.categories; 
             categoryUpdated[state.current_category_index].requests[state.current_request_index].managerResponse=action.payload;
-            categoryUpdated[state.current_category_index].requests.reverse();
+            // categoryUpdated[state.current_category_index].requests.reverse();
             var newnew = categoryUpdated;
             return {
                 ...state,
@@ -76,7 +76,7 @@ export default function(state = initialState, action ) {
         case POST_MANAGER_RESPONSE_FULFILLED:
             var categoryUpdated=state.current_capability.categories;
             categoryUpdated[state.current_category_index].requests[state.current_request_index].comments[action.payload.index_comment].managerResponse=action.payload.managerResponse;
-            categoryUpdated[state.current_category_index].requests.reverse();
+            // categoryUpdated[state.current_category_index].requests.reverse();
             var newnew = categoryUpdated;
             return {
                 ...state,
@@ -103,7 +103,7 @@ export default function(state = initialState, action ) {
                 }
             return {
                 ...state,
-            //  current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
+             current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
             }
         case POST_MARK_COMMENT_READ_REJECTED:
             return {
@@ -119,7 +119,7 @@ export default function(state = initialState, action ) {
             categoryUpdated.requests[state.current_request_index].requestRead="true"
             return {
                 ...state,
-                // *** */ current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
+                current_capability: {...state.current_capability, categoryUpdated: categoryUpdated}
             }
         case POST_MARK_REQUEST_READ_REJECTED:
             return {

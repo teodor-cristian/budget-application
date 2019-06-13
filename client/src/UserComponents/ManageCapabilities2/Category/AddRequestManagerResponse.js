@@ -54,7 +54,6 @@ class AddRequestManagerResponse extends Component{
         let _id_categorie = this.props.current_capability.categories[this.props.current_category_index]._id;
         let _id_request = this.props.current_capability.categories[this.props.current_category_index].requests[this.props.current_request_index]._id;
         let userName = this.props.current_capability.categories[this.props.current_category_index].requests[this.props.current_request_index].authorName;
-      //   console.log(userName);
         this.props.postRequestManagerResponse(managerResponse, _id_capabilitate, _id_categorie, _id_request, userName)
 
         }
