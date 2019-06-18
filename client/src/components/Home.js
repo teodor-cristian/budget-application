@@ -22,6 +22,10 @@ class Home extends Component {
          setTimeout(function () {
              this.props.history.push('/list_of_categories');
          }.bind(this), 1000);
+      }else{
+         setTimeout(function () {
+            this.props.history.push('/idam-login');
+        }.bind(this), 1000);
       }
      
   
