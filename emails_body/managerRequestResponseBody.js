@@ -12,7 +12,7 @@ module.exports= function(managerName,messageResponse){
         currenetDate.toDateString()+
         '<br />  ' +
         '</div>'+
-        '<p style="padding:45px 10px; text-align: center;">For more details chack <a href="google.com">the website</a><p/>'+
+        '<p style="padding:45px 10px; text-align: center;">For more details check <a href="http://10.97.182.17:3000">the website</a><p/>'+
         '</div>'
        
     ) ;

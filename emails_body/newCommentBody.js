@@ -12,8 +12,8 @@ module.exports= function(full_name,comment){
    ' <p style=" line-height: 1.125rem; padding:0px 10px; margin-top:10px ;float:right; color: #002d72; font-weight:bold">'+currenetDate.toDateString()+'<p/>' +
     '<br />' +
  ' </div>' +
- ' <p style="padding:45px 10px; text-align: center;">For more details chack <a href="google.com">the website</a><p/>'+
-'</div>'
+ '<p style="padding:45px 10px; text-align: center;">For more details check <a href="http://10.97.182.17:3000">the website</a><p/>'+
+ '</div>'
        
     ) ;
 }
