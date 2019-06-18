@@ -50,7 +50,8 @@ class App extends Component {
               <Navbar />     
                 <Route exact path="/" component={ Home } />
                 <Route exact path="/login" component={ Login } />
-                <Route path='/idam-login' component={() => { window.location = 'https://idam-pp.metrosystems.net/web/Signin?state=&scope=openid&locale_id=de-DE&redirect_uri=http://localhost:3000&client_id=Client1&country_code=DE&realm_id=metro&account_id=&user_type=EMP&response_type=token'; return null;} }/>
+                {/* <Route path='/idam-login' component={() => { window.location = 'https://idam-pp.metrosystems.net/web/Signin?state=&scope=openid&locale_id=de-DE&redirect_uri=http://localhost:3000&client_id=Client1&country_code=DE&realm_id=metro&account_id=&user_type=EMP&response_type=token'; return null;} }/> */}
+                <Route path='/idam-login' component={() => { window.location = 'https://idam-pp.metrosystems.net/web/Signin?state=&scope=openid&locale_id=de-DE&redirect_uri=http://10.97.182.17:3000&client_id=Client1&country_code=DE&realm_id=metro&account_id=&user_type=EMP&response_type=token'; return null;} }/>
                 <PrivateRoute exact path="/okr_management_protected" isAuth={userAuthentificated} route='/okr_management' component={ OKR_Management } />
                 <PrivateRoute exact path="/manageCapabilities" isAuth={userAuthentificated} route='/manageCapabilities' component={ ManageCapabilities } />
                 <PrivateRoute exact path="/list_of_categories" isAuth={userAuthentificated} route='/list_of_categories' component={ ListOfCategories } />
