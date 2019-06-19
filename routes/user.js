@@ -304,7 +304,7 @@ router.get('/get_all_users', passport.authenticate('jwt', { session: false}), fu
                   console.log("Nu s-au gasit niciun user!");
                 }
                 else{
-                    User.update(
+                    User.findOneAndUpdate( 
                         {"_id": req.body.id_user},
                         {
                         "$addToSet": {capabilities: req.body.capability_id}
