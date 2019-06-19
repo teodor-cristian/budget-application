@@ -123,7 +123,7 @@ class AutosuggestUsers extends Component {
     addUser(e){
         e.preventDefault();
         this.setState({value: ""});
-        this.props.addUserToCapability(this.state.user_id,this.props.current_capability._id);
+        this.props.addUserToCapability(this.state.user_id,this.props.current_capability._id, this.props.current_capability.name);
         console.log(this.state.user_id)
     }
 
@@ -165,8 +165,8 @@ const mapDispatchToProps = (dispatch) => {
         getAllUsers: () => {
           dispatch(getAllUsers())
       },
-        addUserToCapability: (user_id, capability_id) => {
-          dispatch(addUserToCapability(user_id, capability_id))
+        addUserToCapability: (user_id, capability_id, capability_name) => {
+          dispatch(addUserToCapability(user_id, capability_id, capability_name))
         }
     }
   }

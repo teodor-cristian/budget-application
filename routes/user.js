@@ -18,6 +18,8 @@ var transporter = nodemailer.createTransport({
      }
  });
 const capabilityRequestBody = require('../emails_body/capabilityRequestBody');
+const capabilityAssignedSuccessfully = require('../emails_body/capabilityAssignedSuccessfully');
+
 
 router.post('/login', (req, res) => {
 
@@ -305,14 +307,31 @@ router.get('/get_all_users', passport.authenticate('jwt', { session: false}), fu
                     User.update(
                         {"_id": req.body.id_user},
                         {
-
                         "$addToSet": {capabilities: req.body.capability_id}
                         },
                         {safe: true},
-                        function(err, model) {
+                        function(err, user) {
                         console.log(err);
+
+                        htmlBody= capabilityAssignedSuccessfully(req.body.capability_name)
+                        let mailOptions = {
+                          from: 'metrosystems.budget.app@gmail.com', // sender address
+                          to: user.email, // list of receivers
+                          subject: ' You have been assigned to'+ req.body.capability_name+' -Msys Budget App', // Subject line
+                          text: req.body.capability_name, // plain text body
+                          html: htmlBody // html body
+                      };
+                  
+                        transporter.sendMail(mailOptions, (error, info) => {
+                          if (error) {
+                              return console.log(error);
+                          }
+                          console.log('Message sent: %s', info.messageId);
+                          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+              });
                         }
-                    )}
+                    )
+                  }
                 });
 
                   res.json({success:true});

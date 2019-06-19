@@ -24,13 +24,13 @@ export const getAllUsers = () =>  dispatch => {
             });
 }
 
-export const addUserToCapability = (id_user, capability_id) =>  dispatch => {
+export const addUserToCapability = (id_user, capability_id, capability_name) =>  dispatch => {
 
     dispatch({ type: ADD_USER_TO_CAPABILITY_PENDING });
 
     const token='Bearer '+ localStorage.jwtToken;
     
-    axios.post('/api/users/update_user_capability', {'id_user': id_user, 'capability_id': capability_id},{'headers': { 'Authorization': token } })
+    axios.post('/api/users/update_user_capability', {'id_user': id_user, 'capability_id': capability_id, 'capability_name': capability_name},{'headers': { 'Authorization': token } })
             .then(res => {
                 const users = res.data.userMap;
                 dispatch({ type: ADD_USER_TO_CAPABILITY_FULFILLED,

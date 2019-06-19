@@ -89,29 +89,45 @@ app.use('/api/capabilities',capabilities);
 
 // New Capability
 // var newCapability= new Capability({
-//   adminId: "5ba391e435e7103c3cbfce3a",
-//   name: "Javascript 2",
-//   budget: 10000,
-// list_of_expenses: [{
-//     name: "JS Conference",
-//     description: "Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.",
-//     sum: 2500
-//   },
-// {
-//   name: "Books",
-//   description: "Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.",
-//   sum: 200
-// }
-// ],
-// categories: [{ 
-//     name: "Traveling",
-//     description: "Travel by water often provided more comfort and speed than land-travel, at least until the advent of a network of railways in the 19th century. Travel for the purpose of tourism is reported to have started around this time when people began to travel for fun as travel was no longer a hard and challenging task. This was capitalised on by people like Thomas Cook selling tourism packages where trains and hotels were booked together",
-//     budget: 5000,
-//     comments: [{
-//         name: "Teo",
-//         body: "Eu propun sa mergem la munte in Decembrie :)"
-//     }]
-// }]
+//   adminId: "5bb20ee36c2ce914d0c96597",
+//     name: "Business Solution Analysis",
+//     budget: 100000,
+//     categories: [{ 
+//         name: "Traveling",
+//         description: "Traveling",
+//         budget: "10000",
+//         list_of_expenses: [],
+//         requests:[]
+//     },
+//     { 
+//       name: "Training",
+//       description: "Training",
+//       budget: "10000",
+//       list_of_expenses: [],
+//       requests:[]
+//     },
+//     { 
+//     name: "Telecommunication",
+//     description: "Telecommunication",
+//     budget: "10000",
+//     list_of_expenses: [],
+//     requests:[]
+//     },
+//     { 
+//       name: "Materials",
+//       description: "Materials",
+//       budget: "10000",
+//       list_of_expenses: [],
+//       requests:[]
+//     },
+//     { 
+//       name: "Team building and team events",
+//       description: "Team building and team events",
+//       budget: "10000",
+//       list_of_expenses: [],
+//       requests:[]
+//     }],
+
 // });
 
 // newCapability.save(function(err) {
