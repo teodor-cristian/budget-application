@@ -19,7 +19,7 @@
     "react-sticky": "^6.0.3",
     "reactstrap": "^6.5.0",
     "validator": "^10.7.1",
-    "yarn": "^1.9.4"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
